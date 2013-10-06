@@ -35,6 +35,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    _fahrenheitTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    _celsiusTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,19 +50,15 @@
 }
 
 - (IBAction)convertToCelsius:(id)sender {
-    if (sender == _fahrenheitTextField) {
-        float fahrenheit = [self.fahrenheitTextField.text floatValue];
-        float celsius = (fahrenheit - 32) *  5/9;
-        self.celsiusTextField.text = [NSString stringWithFormat:@"%f", celsius];
-    }
+    float fahrenheit = [self.fahrenheitTextField.text floatValue];
+    float celsius = (fahrenheit - 32) *  5/9;
+    self.celsiusTextField.text = [NSString stringWithFormat:@"%g", celsius];
 }
 
 - (IBAction)convertToFahrenheit:(id)sender {
-    if (sender == _celsiusTextField) {
-        float celsius = [self.celsiusTextField.text floatValue];
-        float fahrenheit = celsius * 9/5 + 32;
-        self.fahrenheitTextField.text = [NSString stringWithFormat:@"%f", fahrenheit];
-    }
+    float celsius = [self.celsiusTextField.text floatValue];
+    float fahrenheit = celsius * 9/5 + 32;
+    self.fahrenheitTextField.text = [NSString stringWithFormat:@"%g", fahrenheit];
 }
 
 
