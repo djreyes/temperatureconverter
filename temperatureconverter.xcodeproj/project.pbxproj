@@ -19,6 +19,8 @@
 		3F5DC0A7180122760076C8AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5DC08F180122760076C8AB /* UIKit.framework */; };
 		3F5DC0AF180122760076C8AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F5DC0AD180122760076C8AB /* InfoPlist.strings */; };
 		3F5DC0B1180122760076C8AB /* temperatureconverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DC0B0180122760076C8AB /* temperatureconverterTests.m */; };
+		3F5DC0BD180123A00076C8AB /* ConverterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DC0BB180123A00076C8AB /* ConverterViewController.m */; };
+		3F5DC0BE180123A00076C8AB /* ConverterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F5DC0BC180123A00076C8AB /* ConverterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		3F5DC0AC180122760076C8AB /* temperatureconverterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "temperatureconverterTests-Info.plist"; sourceTree = "<group>"; };
 		3F5DC0AE180122760076C8AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3F5DC0B0180122760076C8AB /* temperatureconverterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = temperatureconverterTests.m; sourceTree = "<group>"; };
+		3F5DC0BA180123A00076C8AB /* ConverterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConverterViewController.h; sourceTree = "<group>"; };
+		3F5DC0BB180123A00076C8AB /* ConverterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConverterViewController.m; sourceTree = "<group>"; };
+		3F5DC0BC180123A00076C8AB /* ConverterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConverterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,9 @@
 				3F5DC09B180122760076C8AB /* AppDelegate.m */,
 				3F5DC09D180122760076C8AB /* Images.xcassets */,
 				3F5DC092180122760076C8AB /* Supporting Files */,
+				3F5DC0BA180123A00076C8AB /* ConverterViewController.h */,
+				3F5DC0BB180123A00076C8AB /* ConverterViewController.m */,
+				3F5DC0BC180123A00076C8AB /* ConverterViewController.xib */,
 			);
 			path = temperatureconverter;
 			sourceTree = "<group>";
@@ -220,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F5DC096180122760076C8AB /* InfoPlist.strings in Resources */,
+				3F5DC0BE180123A00076C8AB /* ConverterViewController.xib in Resources */,
 				3F5DC09E180122760076C8AB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5DC0BD180123A00076C8AB /* ConverterViewController.m in Sources */,
 				3F5DC09C180122760076C8AB /* AppDelegate.m in Sources */,
 				3F5DC098180122760076C8AB /* main.m in Sources */,
 			);
@@ -362,6 +372,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "temperatureconverter/temperatureconverter-Prefix.pch";
 				INFOPLIST_FILE = "temperatureconverter/temperatureconverter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -375,6 +386,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "temperatureconverter/temperatureconverter-Prefix.pch";
 				INFOPLIST_FILE = "temperatureconverter/temperatureconverter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
